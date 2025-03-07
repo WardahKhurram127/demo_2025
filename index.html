@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Wardah Khurram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <button id="theme-toggle">Toggle Theme</button>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Offcanvas Sidebar for Mobile -->
+<button class="btn btn-dark d-md-none m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+    <i class="fas fa-bars"></i> Menu
+</button>
+
+<div class="offcanvas offcanvas-start text-bg-dark d-md-none" id="mobileSidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Wardah Khurram</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#achievements">Achievements</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <div class="profile-container">
+                    <img src="ppp.PNG" class="profile-img" alt="Profile">
+                </div>
+            </div>
+            
+            <div class="col-md-8 text-light">
+                <h1>Hi, It's <span class="red-text">Wardah</span></h1>
+                <h2>I'm a <span class="highlight">Computer Science Student</span></h2>
+                <p>
+                    I'm a computer science student passionate about building innovative software solutions 
+                    and exploring new technologies. My portfolio showcases my skills, projects, and 
+                    dedication to continuous learning in tech.
+                </p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                
+
+                <button class="btn btn-red">Hire Me</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<section id="education" class="content-section">
+    <div class="container">
+        <h2>Education</h2>
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor's in Computer Science</td>
+                    <td>Information Technology University</td>
+                    <td>2023-2027</td>
+                </tr>
+                <tr>
+                    <td>Intermediate (F.Sc Pre-Engineering)</td>
+                    <td>Punjab College Lahore</td>
+                    <td>2021-2023</td>
+                </tr>
+                <tr>
+                    <td>Matriculation (Science)</td>
+                    <td>Connoisseur Grammer School</td>
+                    <td>2019-2021</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<section id="achievements" class="content-section">
+    <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="achievements-list">
+            <li><i class="fa fa-check-circle"></i> Participated in <span class="highlight"> CODE RUSH 2023</span></li>
+            <li><i class="fa fa-check-circle"></i> Participated in <span class="highlight"> Riphah Computing Challenge 2024</span></li>
+            <li><i class="fa fa-trophy"></i> Award in <span class="highlight"> Mental Math Competition </span>  at School Level 2019</li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="projects" class="content-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg mb-4">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vim-Like Text Editor (C++, Data Structures)</h5>
+                        <p class="card-text">Developed a lightweight text editor with Vim-like functionality 
+                            using custom data structures like linked lists, stacks, and queues for efficient 
+                            text manipulation. Focused on core features such as cursor movement, 
+                            text insertion/deletion, and undo-redo operations with a scalable, modular design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-lg mb-4">
+                    <img src="project2.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Android Fitness App (Java)</h5>
+                        <p class="card-text">Developed an Android fitness app with user authentication 
+                            and real-time data storage using Firebase, featuring workout logging and 
+                            progress tracking. Designed an intuitive UI/UX for seamless user experience 
+                            and secure cloud synchronization.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-lg mb-4">
+                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce System (SQL Database Project)</h5>
+                        <p class="card-text">Developed a relational database system for an e-commerce platform 
+                            using SQL to manage user data, product inventory, and transactions. Implemented advanced
+                             queries for efficient order processing, inventory management, and data optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills" class="content-section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="progress-bar-container">
+            <p>HTML & CSS</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 85%"></div>
+            </div>
+            <p>Python</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 75%"></div>
+            </div>
+            <p>SQL</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 65%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="content-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-red">Send</button>
+        </form>
+        <div id="formAlert" class="mt-3"></div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
